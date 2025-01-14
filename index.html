@@ -1,107 +1,75 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Profile Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        justify-content: center; /* Vertikal Center */
-        align-items: center; /* Horizontal Center */
-      }
-      .content {
-        flex: 1;
-      }
-      header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #f9fafb;
-        padding: 1rem;
-      }
-      .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem; /* Adds space between menu items */
-      }
-      .menu a {
-        text-lg;
-        color: gray;
-      }
-      .menu a:hover {
-        color: black;
-      }
-      .profile-container {
-        margin-top: 55px; /* Adds space above the profile section */
-      }
-    </style>
-  </head>
-  <body class="bg-gray-100 text-gray-800">
-    <header class="w-full bg-gray-50 border-b mb-0 p-4">
-      <div class="menu">
-        <a class="text-lg" href="#home">
-          <i class="fas fa-home text-lg"></i>
-        </a>
-        <a class="text-lg" href="#about">
-          <i class="fas fa-user text-lg"></i>
-        </a>
-        <a class="text-lg" href="#skills">
-          <i class="fas fa-cogs text-lg"></i>
-        </a>
-        <a class="text-lg" href="#projects">
-          <i class="fas fa-briefcase text-lg"></i>
-        </a>
-        <a class="text-lg" href="#contact">
-          <i class="fas fa-envelope text-lg"></i>
-        </a>
-      </div>
-    </header>
-
-    <!-- Section home dengan pengaturan lebar responsif -->
-    <div class="w-full max-w-screen-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 content" id="home">
-      <!-- Profile Section -->
-      <div class="p-6 text-center profile-container">
-        <!-- Memperkecil ukuran foto -->
-        <img alt="Profile picture of Habib Nurul Hilal" class="mx-auto rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40" src="https://placehold.co/100x100"/>
-        <div class="mt-4 mb-4">
-          <!-- Memperkecil ukuran teks -->
-          <h1 class="text-xl md:text-2xl font-semibold">
-            I'm Habib Nurul Hilal
-          </h1>
-          <p class="text-sm md:text-lg text-gray-600">
-            Mahasiswa Universitas Safin Pati.
-          </p>
-        </div>
-        <div class="mt-4 flex justify-center space-x-4">
-          <!-- Memperkecil ukuran tombol -->
-          <a class="bg-black text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://github.com" target="_blank">
-            <i class="fab fa-github mr-2"></i>
-            GitHub
-          </a>
-          <a class="bg-gray-200 text-black px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://blog.com" target="_blank">
-            <i class="fas fa-blog mr-2"></i>
-            Blog
-          </a>
-          <a class="bg-red-500 text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://youtube.com" target="_blank">
-            <i class="fab fa-youtube mr-2"></i>
-            YouTube
-          </a>
-        </div>
-      </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Profile Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen justify-center items-center">
+  <header class="w-full bg-gray-50 border-b p-4">
+   <div class="menu flex justify-center items-center gap-6">
+    <a class="text-lg text-gray-600 hover:text-black" href="#home">
+     <i class="fas fa-home text-lg">
+     </i>
+    </a>
+    <a class="text-lg text-gray-600 hover:text-black" href="#about">
+     <i class="fas fa-user text-lg">
+     </i>
+    </a>
+    <a class="text-lg text-gray-600 hover:text-black" href="#skills">
+     <i class="fas fa-cogs text-lg">
+     </i>
+    </a>
+    <a class="text-lg text-gray-600 hover:text-black" href="#projects">
+     <i class="fas fa-briefcase text-lg">
+     </i>
+    </a>
+    <a class="text-lg text-gray-600 hover:text-black" href="#contact">
+     <i class="fas fa-envelope text-lg">
+     </i>
+    </a>
+   </div>
+  </header>
+  <div class="w-full max-w-screen-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 flex-1 flex justify-center items-center" id="home">
+   <div class="p-6 text-center profile-container">
+    <img alt="Profile picture of Habib Nurul Hilal" class="mx-auto rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40" src="https://placehold.co/100x100"/>
+    <div class="mt-4 mb-4">
+     <h1 class="text-xl md:text-2xl font-semibold">
+      I'm Habib Nurul Hilal
+     </h1>
+     <p class="text-sm md:text-lg text-gray-600">
+      Mahasiswa Universitas Safin Pati.
+     </p>
     </div>
-
-    <footer class="w-full bg-gray-50 border-t mt-0 p-4">
-      <div class="max-w-md mx-auto">
-        <div class="text-center text-sm text-gray-500">
-          © 2023 Habib Nurul Hilal. All rights reserved.
-        </div>
-      </div>
-    </footer>
-  </body>
+    <div class="mt-4 flex justify-center space-x-4">
+     <a class="bg-black text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://github.com" target="_blank">
+      <i class="fab fa-github mr-2">
+      </i>
+      GitHub
+     </a>
+     <a class="bg-gray-200 text-black px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://blog.com" target="_blank">
+      <i class="fas fa-blog mr-2">
+      </i>
+      Blog
+     </a>
+     <a class="bg-red-500 text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://youtube.com" target="_blank">
+      <i class="fab fa-youtube mr-2">
+      </i>
+      YouTube
+     </a>
+    </div>
+   </div>
+  </div>
+  <footer class="w-full bg-gray-50 border-t p-4">
+   <div class="max-w-md mx-auto">
+    <div class="text-center text-sm text-gray-500">
+     © 2023 Habib Nurul Hilal. All rights reserved.
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
