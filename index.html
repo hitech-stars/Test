@@ -9,8 +9,8 @@
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
  </head>
- <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen justify-center items-center">
-  <header class="w-full bg-gray-50 border-b p-4">
+ <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+  <header class="w-full bg-gray-50 border-b p-4 fixed top-0 left-0 right-0 z-10">
    <div class="menu flex justify-center items-center gap-6">
     <a class="text-lg text-gray-600 hover:text-black" href="#home">
      <i class="fas fa-home text-lg">
@@ -34,37 +34,79 @@
     </a>
    </div>
   </header>
-  <div class="w-full max-w-screen-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 flex-1 flex justify-center items-center" id="home">
-   <div class="p-6 text-center profile-container">
-    <img alt="Profile picture of Habib Nurul Hilal" class="mx-auto rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40" src="https://placehold.co/100x100"/>
-    <div class="mt-4 mb-4">
-     <h1 class="text-xl md:text-2xl font-semibold">
-      I'm Habib Nurul Hilal
-     </h1>
-     <p class="text-sm md:text-lg text-gray-600">
-      Mahasiswa Universitas Safin Pati.
-     </p>
-    </div>
-    <div class="mt-4 flex justify-center space-x-4">
-     <a class="bg-black text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://github.com" target="_blank">
-      <i class="fab fa-github mr-2">
-      </i>
-      GitHub
-     </a>
-     <a class="bg-gray-200 text-black px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://blog.com" target="_blank">
-      <i class="fas fa-blog mr-2">
-      </i>
-      Blog
-     </a>
-     <a class="bg-red-500 text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://youtube.com" target="_blank">
-      <i class="fab fa-youtube mr-2">
-      </i>
-      YouTube
-     </a>
+  <main class="flex-1 w-full flex flex-col items-center justify-center mt-16">
+   <div class="w-full max-w-screen-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 p-6 flex-1" id="home">
+    <div class="text-center">
+     <img alt="Profile picture of Habib Nurul Hilal" class="mx-auto rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40" src="https://placehold.co/100x100"/>
+     <div class="mt-4 mb-4">
+      <h1 class="text-xl md:text-2xl font-semibold">
+       I'm Habib Nurul Hilal
+      </h1>
+      <p class="text-sm md:text-lg text-gray-600">
+       Mahasiswa Universitas Safin Pati.
+      </p>
+     </div>
+     <div class="mt-4 flex justify-center space-x-4">
+      <a class="bg-black text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://github.com" target="_blank">
+       <i class="fab fa-github mr-2">
+       </i>
+       GitHub
+      </a>
+      <a class="bg-gray-200 text-black px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://blog.com" target="_blank">
+       <i class="fas fa-blog mr-2">
+       </i>
+       Blog
+      </a>
+      <a class="bg-red-500 text-white px-4 py-2 rounded-full flex items-center text-sm md:text-base" href="https://youtube.com" target="_blank">
+       <i class="fab fa-youtube mr-2">
+       </i>
+       YouTube
+      </a>
+     </div>
     </div>
    </div>
-  </div>
-  <footer class="w-full bg-gray-50 border-t p-4">
+   <div class="w-full max-w-screen-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 p-6 flex-1" id="about">
+    <div class="text-center">
+     <h2 class="text-2xl md:text-3xl font-semibold">
+      About Me
+     </h2>
+     <p class="mt-4 text-sm md:text-lg text-gray-600">
+      I am a student at Universitas Safin Pati, passionate about web development and design. I enjoy learning new technologies and applying them to real-world projects.
+     </p>
+    </div>
+   </div>
+   <div class="w-full max-w-screen-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 p-6 flex-1" id="skills">
+    <div class="text-center">
+     <h2 class="text-2xl md:text-3xl font-semibold">
+      Skills
+     </h2>
+     <p class="mt-4 text-sm md:text-lg text-gray-600">
+      I have experience with HTML, CSS, JavaScript, and various frameworks such as React and Tailwind CSS. I am also familiar with backend technologies like Node.js and Express.
+     </p>
+    </div>
+   </div>
+   <div class="w-full max-w-screen-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 p-6 flex-1" id="projects">
+    <div class="text-center">
+     <h2 class="text-2xl md:text-3xl font-semibold">
+      Projects
+     </h2>
+     <p class="mt-4 text-sm md:text-lg text-gray-600">
+      I have worked on several projects, including web applications, mobile apps, and open-source contributions. Check out my GitHub for more details.
+     </p>
+    </div>
+   </div>
+   <div class="w-full max-w-screen-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-5 mb-5 p-6 flex-1" id="contact">
+    <div class="text-center">
+     <h2 class="text-2xl md:text-3xl font-semibold">
+      Contact
+     </h2>
+     <p class="mt-4 text-sm md:text-lg text-gray-600">
+      Feel free to reach out to me via email at habib@example.com or connect with me on LinkedIn.
+     </p>
+    </div>
+   </div>
+  </main>
+  <footer class="w-full bg-gray-50 border-t p-4 fixed bottom-0 left-0 right-0 z-10">
    <div class="max-w-md mx-auto">
     <div class="text-center text-sm text-gray-500">
      © 2023 Habib Nurul Hilal. All rights reserved.
